@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>navbar Hover Effect</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+      *{
+        margin:0;
+        padding:0;
+        font-family: 'Poppins', sans-serif;
+      }
+      nav{
+        background-color: #00cec9;
+        height:100px;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .logo{
+        width:40%;
+        color:#ff7675;
+        /* background-color: #e84393; */
+        padding-left: 55px;
+      }
+      .menu{
+        width:60%;
+        /* background-color:#6c5ce7; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .menu a{
+        text-decoration: none;
+        color:#2d3436;
+        text-transform: uppercase;
+        font-weight: bold;
+        position:relative;
+      }
+      .menu a:before{
+           position:absolute;
+           content:"";
+           left:0;
+           top:100%;
+           width:0;
+           height:3px;
+           background-color: #000;
+           transition:all 0.5s linear;
+      }
+      .menu a:hover:before{
+        width:100%;
+        background-color: #6c5ce7;
+      }
+      .logo h1{
+        text-shadow: 2px 2px 2px #dfe6e9;
+      }
+  </style>
+</head>
+<body>
+   <nav>
+     <div class="logo">
+       <h1>Animesh Awasthi</h1>
+     </div>
+      <div class="menu">
+          <a href="#">home</a>
+          <a href="#">services</a>
+          <a href="#">gallery</a>
+          <a href="#">about</a>
+          <a href="#">contact</a>
+      </div>
+   </nav>
+</body>
+</html>
